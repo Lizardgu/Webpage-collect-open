@@ -171,7 +171,8 @@
     }
     input[type="url"], input[type="text"], input[type="file"], select{
       flex:1;
-      padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:#e6eef8;outline:none;
+      padding:10px;border-radius:10px;border-radius: 12px; /* 可修改圆角 */border: 2px solid rgba(255,255,255,0.12); /* 更粗更明显的边框（非聚焦） */;background: rgba(255,255,255,0.02); /* 轻微底色提高对比 */
+      color:#e6eef8;outline:none;transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
     }
     .hint{font-size:12px;color:rgba(148,163,184,0.75)}
     .tag-chooser{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
